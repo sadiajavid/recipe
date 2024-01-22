@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.recipe-box {
+    border: 1px solid pink; 
+    margin: 30px; 
+    padding: 10px; 
+    border-radius: 5px;
+    
+     
+}
+
+.recipe-image {
+    max-height: 50px;
+    max-width: 100px; 
+}
