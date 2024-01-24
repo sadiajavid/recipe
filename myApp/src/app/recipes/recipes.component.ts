@@ -8,6 +8,6 @@ import { Recipe } from './recipe.model';
 })
 export class RecipesComponent {
 
-selectedRecipe: Recipe | undefined; // or initialize it with an actual recipe
+
 
 }
