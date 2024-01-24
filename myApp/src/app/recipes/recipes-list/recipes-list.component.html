@@ -5,18 +5,8 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <div class="recipe-box" *ngFor="let recipe of recipes">
-            <a href="#" class="list-group-item clearfix">
-                <div class="pull-left">
-                    <h4>{{recipe.name}}</h4>
-                    <p>{{recipe.description}}</p>
-                </div>
-                <span class="pull-right">
-                    <img src="{{recipe.imagePath}}" alt="{{recipe.name}}" class="img-responsive recipe-image">
-                </span>
-            </a>
-        </div>
+        <app-recipes-item [recipe]="recipeEL"  (recipeSelected)="onRecipeSelected(recipeEL)" *ngFor="let recipeEL of recipes"></app-recipes-item>
     </div>
 </div>
-<app-recipes-item></app-recipes-item>
+
 

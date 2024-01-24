@@ -9,6 +9,8 @@ import { ingredient } from '../../../shared/ingredients-model';
 export class ShoppingListComponent {
 ingredients:ingredient[]=[
   new ingredient("apple",500),
-  new ingredient("tomatoes",300)
-];
+  new ingredient("tomatoes",300),
+  new ingredient("potatoes",300),
+  new ingredient("onion",400)
+]
 }
