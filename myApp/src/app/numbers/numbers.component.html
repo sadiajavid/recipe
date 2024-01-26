@@ -1,0 +1,28 @@
+<p>numbers works!</p>
+<button class="btn btn-danger" (click)="onClick=!onClick">button</button>
+<ul class="list-group">
+    <div *ngIf="onClick">
+        <li class="list-group-item" *ngFor="let no of oddnumber"  >
+            {{no}}
+            hloo
+        </li>
+    </div>
+    <ng-template [ngIf]="onClick">
+        <div>
+            <li class="list-group-item" *ngFor="let no of oddnumber"  >
+                {{no}}
+                hloo
+            </li>
+        </div>
+
+    </ng-template>
+    <div *ngIf="!onClick">
+        <li class="list-group-item" *ngFor="let no of evennumber">
+            {{no}}
+            hloo
+        </li>
+       
+    </div>
+</ul>
+<p appBasicHighlight >style me with basic directive</p>
+<p appBetterHighlight [defaultcolor]="'red'" [highlightcolor]="'aqua'">style me with basic directive</p>

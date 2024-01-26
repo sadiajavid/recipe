@@ -8,10 +8,14 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipes-list.component.css']
 })
 export class RecipesListComponent {
-
-recipes:Recipe[]=[
-  new Recipe(" A Test Recipe","description","/assets/image/recipe.jpg")
-]
-
  
+  recipes: Recipe[] = [
+    new Recipe(" A Test Recipe", "description", "/assets/image/recipe.jpg"),
+
+    new Recipe(" A  Recipe", "description", "/assets/image/recipe.jpg"),
+
+    new Recipe("new recipe", "description", "/assets/image/recipe.jpg")
+
+  ]
+  
 }

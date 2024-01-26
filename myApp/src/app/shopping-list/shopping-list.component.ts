@@ -13,4 +13,7 @@ ingredients:ingredient[]=[
   new ingredient("potatoes",300),
   new ingredient("onion",400)
 ]
+onIngredientAdded(ingredient:ingredient){
+this.ingredients.push(ingredient)
+}
 }
