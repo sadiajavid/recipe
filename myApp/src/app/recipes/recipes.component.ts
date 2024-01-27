@@ -1,17 +1,4 @@
-// import { Component } from '@angular/core';
-// import { Recipe } from './recipe.model';
 
-// @Component({
-//   selector: 'app-recipes',
-//   templateUrl: './recipes.component.html',
-//   styleUrl: './recipes.component.css'
-// })
-// export class RecipesComponent {
-
-// selectedRecipe!:Recipe;
-
-// }
-// recipes.component.ts
 
 import { Component } from '@angular/core';
 import { Recipe } from './recipe.model';
@@ -22,7 +9,7 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent {
-  selectedRecipe!: Recipe;
+  selectedRecipe!: Recipe|undefined;
 
   onRecipeSelected(recipe: Recipe): void {
     this.selectedRecipe = recipe;

@@ -20,10 +20,6 @@ import { Recipe } from '../recipe.model';
   templateUrl: './recipes-detail.component.html',
   styleUrls: ['./recipes-detail.component.css']
 })
-export class RecipesDetailComponent implements OnInit {
-  @Input() recipeSelected!: Recipe;
-
-  ngOnInit() {
-    console.log("recipe: " + this.recipeSelected)
-  }
+export class RecipesDetailComponent {
+ @Input() recipe:Recipe;
 }
